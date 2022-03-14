@@ -1,0 +1,88 @@
+.logo img{
+	height: 32px;
+}
+
+.card-header{
+	background-color: #007e8a12;
+}
+
+.card-header .header-title{
+	text-align: right;
+	color: #007e8a;
+}
+.card-header .header-title span{
+	float: left;
+	font-size: 26px;
+}
+.form-control{
+	border: 1px #007e8a solid;
+}
+
+table td{
+	width: 10px !important;
+	overflow-x: auto;
+}
+table th:last-child {
+	width: 100%;
+}
+
+table tfoot tr th{
+	padding: 0px !important;
+}
+#pourAffecter th:nth-child(3), #pourAffecter th:nth-child(4),  #pourAffecter th:nth-child(7){
+	display: none;
+}
+
+
+
+#dejaAffecter th:nth-child(3), #dejaAffecter th:nth-child(4), #dejaAffecter th:nth-child(6), #dejaAffecter th:nth-child(7),  #dejaAffecter th:nth-child(5){
+	display: none;
+}
+
+#dejaAffecter td:nth-child(3), #dejaAffecter td:nth-child(4), #dejaAffecter td:nth-child(6), #dejaAffecter td:nth-child(7), #dejaAffecter td:nth-child(5){
+	display: none;
+}
+
+.pourAffecter{
+	background-color: #007e8a !important;
+}
+.pourAffecter h4{
+	color: white !important;
+}
+.table > tbody > tr > td, .table > tfoot > tr > td, .table > thead > tr > td {
+    padding: 4px 10px;
+	width: 100% !important;
+}
+
+.dejaAffecter.card-header{
+	background-color: #024b52;
+}
+
+.dejaAffecter.card-header h4{
+	color: white !important;
+}
+thead tr th{
+	width: 100% !important;
+}
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled, .table > tbody > tr > td, .table > tfoot > tr > td, .table > thead > tr > td {
+    width: auto !important;
+}
+.btn-action{
+	padding: 5px;
+}
+
+tbody tr:hover{
+	background-color: #B0BED9 !important;
+	color: black;
+}
+ .highlight{
+    background-color: #B0BED9 !important;
+    color: black;
+    font-weight: 600;
+}
+tfoot input, tfoot select{
+	display: inline-block;
+	width: 100% !important;
+}
+
+/**/

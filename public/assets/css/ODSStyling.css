@@ -1,0 +1,220 @@
+@media (min-width: 768px){
+ .col-lg-2 {
+     -ms-flex: 0 0 16.666667%;
+     flex: 0 0 30.666667%;
+     max-width: 20%;
+ }
+ .col-lg-10 {
+     -ms-flex: 0 0 83.333333%;
+     flex: 0 0 83.333333%;
+     max-width: 80%;
+ }
+ 
+}
+.formulaire-recherche .card-header h5 a{
+    display: block;
+}
+
+.card-body{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.formulaire-recherche .card-header span{
+ display: inline-block;
+ float: right;
+
+}
+.text-dark{
+ color: #007e8a !important;
+}
+
+.select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field {
+    background: 0 0;
+    padding: 0 12px;
+    height: 37px;
+    line-height: 1.42857143;
+    margin-top: 0;
+    min-width: 5em;
+}
+
+.select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
+    margin: 7px 0 0 6px;
+ }
+
+ .select2-container--bootstrap .select2-selection {
+    border: 1px solid #007e8a;
+ }
+
+ .liste{
+  margin-top: 25px;
+ }
+
+table{
+  width: 100%;
+ }
+thead tr th {
+    width: 10% !important;
+    text-align: center;
+}
+table.dataTable.nowrap th, table.dataTable.nowrap td {
+    width: 10% !important;
+    text-align: center;
+}
+table#ODS thead tr th{
+ width: 14% !important;
+    text-align: center;
+}
+
+table#tiers thead tr th{
+ width: 14% !important;
+    text-align: center;
+}
+
+.card-header {
+    background-color: #007e8a29;
+}
+#info_ods h6{
+ text-align: right;
+}
+.masque{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 91.1%;
+    margin-left: -20px;
+    margin-top: -20px;
+    background-color: #ffffff99;
+    z-index: 5;
+    overflow: hidden;
+}
+
+#modifier_ods .masque{
+ height: 80.1%;
+}
+table.dataTable {
+    width: 100% !important;
+}
+table .btn{
+    padding: 0px 4px;
+}
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 5px 10px !important;
+}
+table.dataTable{
+    max-height: 500px;
+}
+.select2-container--bootstrap .select2-selection--single {
+    height: 38px;
+    line-height: 1.42857143;
+    padding: 6px 24px 6px 12px;
+    padding: 3px 0px;
+}
+.select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
+    padding: 6px;
+}
+a.nav-link{
+    color: #000000 !important;
+    font-weight: bold;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #d6eaec;
+    border-color: #d6eaec #d6eaec #d6eaec;
+}
+.nav-tabs {
+    border-bottom: 1px solid #d6eaec;
+}
+.my-wrapper, .my-wrapper2, .my-wrapper3, .my-wrapper4, .my-wrapper5{
+    padding:28px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #353535ed;
+    z-index: 1000;
+    overflow: scroll;
+    display: none;
+    overflow-x: hidden;
+}
+.my-wrapper2, .my-wrapper3, .my-wrapper4, .my-wrapper5{
+    overflow-y: hidden;
+}
+.my-modal{
+    padding-top: 2%;
+    display: block;
+    position: relative;
+    width: 65%;
+    margin: auto;
+    padding: 49px 5%;
+    background-color: white;
+    box-shadow: 2px 2px 12px black;
+    border-radius:10px;
+}
+.my-modal h5{
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    color: #007e8a;
+}
+.icon-design{
+    background-color: #c2c4c55c;
+    padding: 11px;
+    border-radius: 100px;
+    color: black;
+    font-size: 17px;
+    font-weight: 100;
+    float: right;
+    border: 1px #c4c5c5 solid;
+}
+.divider{
+    border-bottom: 1px #007e8a59 solid;
+    margin: 16px 0 35px 0;
+}
+.close{
+    position: absolute;
+    top: -11px;
+    right: -12px;
+    background-color: #ffffff;
+    border: 1px #747575 solid;
+    opacity: 1;
+    border-radius: 10px;
+    color: #747575;
+}
+.close p{
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 5px 8px;
+    font-size: 15px;
+}
+
+#dossier_ods table.dataTable.nowrap th, #dossier_ods table.dataTable.nowrap td {
+    white-space: nowrap;
+    width: 14% !important;
+}
+
+#tiers .card-body{
+    height: 330px;
+}
+
+.liste_tiers .card-body,
+.liste_expert .card-body{
+    height: 330px !important;
+}
+
+.generer-ods{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+}
+
+.alert-success {
+    color: #ffffff !important;
+    background-color: #007e8a !important;
+}
+
+#dossier_sinistre table.dataTable.nowrap th, #dossier_sinistre table.dataTable.nowrap td {
+    width: 10% !important;
+    text-align: left;
+    padding: 3px;
+}

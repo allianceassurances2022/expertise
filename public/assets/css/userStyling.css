@@ -1,0 +1,16 @@
+table thead th:nth-child(9),table tbody td:nth-child(9){
+	display: block;
+	width: 160px !important;
+	text-align: right;
+
+}
+
+table thead th:nth-child(6), table tbody td:nth-child(6){
+	width: 150px !important;
+
+}
+
+table thead th:nth-child(7), table tbody td:nth-child(7){
+	display: block;
+	width: 150px !important;
+}

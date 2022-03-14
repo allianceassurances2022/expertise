@@ -1,0 +1,20 @@
+img#logo{
+	height: 70px;
+	margin: 24px 0px 0px 0px;
+}
+h4{
+	border-bottom: 1px #f1f1f1 solid;
+	padding-bottom: 33px;
+	text-align: center !important;
+    letter-spacing: 0.41em;
+    margin-left: 7px;
+    font-weight: 100;
+}
+h2 b{
+	color: #00899a !important;
+}
+img.auth_logo{
+	display: inline-block;
+	width: 80% !important;
+    margin: auto;
+}

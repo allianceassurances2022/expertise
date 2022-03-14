@@ -1,0 +1,191 @@
+@extends('default')
+
+@section('head_title')
+	Test drag and drop 
+@endsection
+
+@section('title')
+	Modifier Une Agence 
+@endsection
+
+
+@section('head')
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+ <style>
+  
+
+#sortable1, #sortable2 {
+    border: 1px solid #eee;
+    width: 142px;
+    min-height: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 0 0;
+    float: left;
+    margin-right: 10px;
+  }
+  #sortable1 li, #sortable2 li {
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    width: 120px;
+  }
+  .ui-draggable, .ui-droppable {
+	background-position: top;
+}
+</style>
+@endsection
+
+
+@section('content')
+
+<!-- """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" -->
+	<div   id="app_drag">
+	  <div class="col-12">
+		<div class="card ">
+			<div class="form-group">
+				{{-- <my_draggable></my_draggable> --}}
+
+				<ul id="sortable1" class="connectedSortable">
+				  <li class="ui-state-default">Item 1</li>
+				  <li class="ui-state-default">Item 2</li>
+				  <li class="ui-state-default">Item 3</li>
+				  <li class="ui-state-default">Item 4</li>
+				  <li class="ui-state-default">Item 5</li>
+				</ul>
+				 
+				<ul id="sortable2" class="connectedSortable">
+				  <li class="ui-state-highlight">Item 1</li>
+				  <li class="ui-state-highlight">Item 2</li>
+				  <li class="ui-state-highlight">Item 3</li>
+				  <li class="ui-state-highlight">Item 4</li>
+				  <li class="ui-state-highlight">Item 5</li>
+				</ul>
+			</div>	
+    	</div>
+      </div>
+    </div>
+
+    <!-- """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" -->
+
+
+@endsection
+
+
+@section('js')
+  {{-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> --}}
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+
+  $( function() {
+    $( "#sortable1, #sortable2" ).sortable({
+      connectWith: ".connectedSortable",
+      containment: "#app_drag",
+      // appendTo:  '#app_drag',
+      placeholder: "ui-state-helper",
+      cursor: "move",
+      // axis: "x",
+    }).disableSelection();
+  } );
+//window.Vue = require('vue');
+
+// document.addEventListener('DOMContentLoaded', (event) => {
+//     console.log('DOM fully loaded and parsed');
+// });
+
+// import draggable from "@/vuedraggable";
+// Vue.component('my_draggable', {
+
+// 	name: "two-lists",
+//   display: "Two Lists",
+//   order: 1,
+//   components: {
+//     draggable
+//   },
+//   data() {
+//     return {
+//       list1: [
+//         { name: "John", id: 1 },
+//         { name: "Joao", id: 2 },
+//         { name: "Jean", id: 3 },
+//         { name: "Gerard", id: 4 }
+//       ],
+//       list2: [
+//         { name: "Juan", id: 5 },
+//         { name: "Edgard", id: 6 },
+//         { name: "Johnson", id: 7 }
+//       ]
+//     };
+//   },
+//   methods: {
+//         add: function() {
+//       this.list.push({ name: "Juan" });
+//     },
+//     replace: function() {
+//       this.list = [{ name: "Edgard" }];
+//     },
+//     clone: function(el) {
+//       return {
+//         name: el.name + " cloned"
+//       };
+//     },
+//     log: function(evt) {
+//       window.console.log(evt);
+//     }
+//   },
+//   render() {
+//    		 return  <div class="row">
+// 			    <div class="col-3">
+// 			      <h3>Draggable 1</h3>
+// 			      <draggable class="list-group" :list="list1" group="people" @change="log">
+// 			        <div
+// 			          class="list-group-item"
+// 			          v-for="(element, index) in list1"
+// 			          :key="element.name"
+// 			        >
+// 			          { element.name } { index }
+// 			        </div>
+// 			      </draggable>
+// 			    </div>
+
+// 			    <div class="col-3">
+// 			      <h3>Draggable 2</h3>
+// 			      <draggable class="list-group" :list="list2" group="people" @change="log">
+// 			        <div
+// 			          class="list-group-item"
+// 			          v-for="(element, index) in list2"
+// 			          :key="element.name"
+// 			        >
+// 			          { element.name } { index }
+// 			        </div>
+// 			      </draggable>
+// 			    </div>
+
+// 			    <rawDisplayer class="col-3" :value="list1" title="List 1" />
+
+// 			    <rawDisplayer class="col-3" :value="list2" title="List 2" />
+// 			  </div>
+//   }
+// });
+
+// const app = new Vue({
+//     el: '#app',
+//     components: {
+// 	    my_draggable,
+// 	  },
+//      //render: h => h(App)
+// }).$mount('#app');
+
+
+
+  
+  
+</script>
+
+
+
+@endsection
