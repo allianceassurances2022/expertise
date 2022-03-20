@@ -237,16 +237,23 @@ class ImageController extends Controller
         $response = json_decode($request->getBody(), true);
         //dd($response);
 
+
+        $meetingNum = $response['meeting_id'];
+        $signature = $response['signature'];
+        $password = $response['password'];
+
         //send email to client with join url
         $email = "shariti@allianceassurances.com.dz";
         $lien_client = $response['join_url'];
         $information = "Expertise Zoom meeting";
-        $this->envoiMail($email,  $lien_client, $information);
+        // $this->envoiMail($email,  $lien_client, $information);
 
 
 
         //   return redirect($response['start_url']);
-        return view('expertise.meeting');
+        //return view('expertise.meeting');
+
+        return view('expertise.meeting-test', compact('meetingNum', 'signature', 'password'));
     }
     /*   public function envoiMail($email, $lien_client, $information)
     {

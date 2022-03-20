@@ -29,35 +29,18 @@
 @endsection
 
 @section('content')
-    <!--
-                                                                                                <div class="card">
-                                                                                                                                                                                        <div class="card-body">
-                                                                                                                                                                                            <div class="row">
-                                                                                                                                                                                                <div class="col-12">
-                                                                                                                                                                                                   
-                                                                                                                                                                                                </div>
-                                                                                                                                                                                            </div>
-
-                                                                                                                                                                                        </div>
-                                                                                                                                                                                    </div>
-                                                                                                                                                                                -->
+    -->
     <div id="meetingSDKElement"></div>
     <br>
     <div id="zmmtg-root" style="position: relative;right: 8px;display: block;margin-top: 62px;"></div>
     <br>
     <br>
     <div id="aria-notify-area"></div>
-
-
-
-
 @endsection
 
 
 
 @section('js')
-
-
     <script src="{{ asset('assets/js/lib/react.min.js') }}"></script>
     <script src="{{ asset('assets/js/lib/react-dom.min.js') }}"></script>
     <script src="{{ asset('assets/js/lib/redux.min.js') }}"></script>
@@ -147,6 +130,4 @@
             }
         });
     </script>
-
-
 @endsection
